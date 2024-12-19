@@ -16,6 +16,26 @@ let scrollTween = gsap.to(sections, {
 });
 
 
+
+document.addEventListener('wheel', function(e) {
+  if (e.deltaX !== 0) {
+    e.preventDefault();
+    window.scrollBy({
+      top: e.deltaY,
+      left: 0,
+      behavior: 'auto'
+    });
+  }
+}, { passive: false });
+
+document.addEventListener('mousedown', function(e) {
+  if (e.button === 1) {
+    e.preventDefault();
+  }
+});
+
+
+
 document.querySelector(".header-top h2").addEventListener("mouseover", () => {
   const h2 = document.querySelector(".header-top h2");
   h2.style.animation = "none"; // Stop flicker
@@ -182,16 +202,16 @@ let lottieAnimation7 = lottie.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: './AnimExports/GEN Z + ENSEMBLE.json' // chemin
+  path: './AnimExports/WordsAnimation.json' // chemin
 });
 
 ScrollTrigger.create({
   trigger: document.getElementById('lottie-animation7'),
   containerAnimation: scrollTween,
-  start: "center 50%",
-  end: "center 50%",
+  start: "center 70%",
+  end: "center 70%",
   scrub: false,
-  // markers: { startColor: "green", endColor: "yellow" }, // Pour tester
+  markers: { startColor: "green", endColor: "yellow" }, // Pour tester
   onEnter: () => {
     lottieAnimation7.play();
   },

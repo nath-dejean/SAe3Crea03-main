@@ -203,6 +203,7 @@ textarea:not([rows]) {
 body {
   font-family: 'Marianne', sans-serif;
   background-color: #222;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -236,6 +237,14 @@ h2 {
   gap: 2rem;
   width: 100vw;
   height: 100vh;
+}
+
+.panel:nth-child(6){
+  gap: 0;
+}
+
+.panel:nth-child(7){
+  gap: 0;
 }
 
 .panel--red {
@@ -275,7 +284,7 @@ h2 {
 }
 
 .panel--lightyellow {
-  background-color: #f7cc84;
+  background-color: #fae1b5;
 }
 
 .box {
@@ -298,6 +307,12 @@ h2 {
 .lottie-container {
   width: 100%;
   height: 400px;
+  margin: 0 auto;
+}
+
+.bigger-lottie-container {
+  width: 100%;
+  height: 500px;
   margin: 0 auto;
 }
 
@@ -385,4 +400,8 @@ h2 {
 .header-top:hover h2 {
   color: #ff0000;
   text-shadow: 0px 0px 8px #ff0000;
+}
+
+.conclusionQuestion {
+  color: white;
 }
