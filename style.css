@@ -215,6 +215,7 @@ h2 {
 .description,
 .final {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -258,7 +259,11 @@ h2 {
 }
 
 .panel--green {
-  background-color: green;
+  background-color: #00bda5;
+}
+
+.panel--lightgreen {
+  background-color: #80ded2;
 }
 
 .box {
@@ -284,27 +289,50 @@ h2 {
   margin: 0 auto;
 }
 
+.lottieIllustration-container {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+}
+
+.lottieIllustration1 {
+  left: -6rem;
+  top: -6rem;
+  padding: 8rem 2rem 2rem 8rem;
+  background-color: #5c62d6;
+  border-radius: 50%;
+}
+
+.lottieIllustration2 {
+  right: -5rem;
+  bottom: -4rem;
+  padding: 4rem 7rem 7rem 4rem;
+  background-color: #aeb1eb;
+  border-radius: 50%;
+}
+
 /* --- */
 
 .description {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 110%;
   height: 200px;
   scale: 1.05;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
-  background: #111;
+  background: #f5f5f5;
   overflow: hidden;
 }
 
-.tv-screen h2 {
+.header-top h2 {
   width: 100%;
   /* font-family: "Courier New", Courier, monospace; */
   font-family: "Marianne", sans-serif;
-  color: #00ff00;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   animation: flicker 3s infinite alternate;
@@ -342,7 +370,7 @@ h2 {
   }
 }
 
-.tv-screen:hover h2 {
+.header-top:hover h2 {
   color: #ff0000;
   text-shadow: 0px 0px 8px #ff0000;
 }

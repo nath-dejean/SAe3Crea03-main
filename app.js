@@ -16,8 +16,8 @@ let scrollTween = gsap.to(sections, {
 });
 
 
-document.querySelector(".tv-screen h2").addEventListener("mouseover", () => {
-  const h2 = document.querySelector(".tv-screen h2");
+document.querySelector(".header-top h2").addEventListener("mouseover", () => {
+  const h2 = document.querySelector(".header-top h2");
   h2.style.animation = "none"; // Stop flicker
   setTimeout(() => {
     h2.style.animation = ""; // Restart flicker
@@ -176,8 +176,45 @@ ScrollTrigger.create({
   toggleActions: "play none none none",
 });
 
+// Animation Lottie 7
+let lottieAnimation7 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation7'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: './AnimExports/GEN Z + ENSEMBLE.json' // chemin
+});
 
+ScrollTrigger.create({
+  trigger: document.getElementById('lottie-animation7'),
+  containerAnimation: scrollTween,
+  start: "center 50%",
+  end: "center 50%",
+  scrub: false,
+  // markers: { startColor: "green", endColor: "yellow" }, // Pour tester
+  onEnter: () => {
+    lottieAnimation7.play();
+  },
+  toggleActions: "play none none none",
+});
 
+// Animation Lottie 8
+let lottieAnimation8 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation8'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './AnimExports/ChartsIllustration1.json' // chemin
+});
+
+// Animation Lottie 9
+let lottieAnimation9 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation9'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './AnimExports/ChartsIllustration2.json' // chemin
+});
 
 
 
@@ -196,41 +233,41 @@ ScrollTrigger.create({
 //   },
 // });
 
-// section 2 : Animation with scrub
-gsap.to(".box-2", {
-  y: -120,
-  backgroundColor: "#1e90ff",
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".box-2",
-    containerAnimation: scrollTween,
-    scrub: true,
-    start: "center 80%",
-    end: "center 58%",
-    // markers: { startColor: "white", endColor: "white" },
-  },
-});
+// // section 2 : Animation with scrub
+// gsap.to(".box-2", {
+//   y: -120,
+//   backgroundColor: "#1e90ff",
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".box-2",
+//     containerAnimation: scrollTween,
+//     scrub: true,
+//     start: "center 80%",
+//     end: "center 58%",
+//     // markers: { startColor: "white", endColor: "white" },
+//   },
+// });
 
-// section 3 : Toggle class
-ScrollTrigger.create({
-  trigger: ".box-3",
-  containerAnimation: scrollTween,
-  toggleClass: "active",
-  start: "center 80%",
-  end: "center 58%",
-  // markers: { startColor: "white", endColor: "white" },
-});
+// // section 3 : Toggle class
+// ScrollTrigger.create({
+//   trigger: ".box-3",
+//   containerAnimation: scrollTween,
+//   toggleClass: "active",
+//   start: "center 80%",
+//   end: "center 58%",
+//   // markers: { startColor: "white", endColor: "white" },
+// });
 
-// section 4 : Custom function
-ScrollTrigger.create({
-  trigger: ".panel--purple",
-  containerAnimation: scrollTween,
-  start: "center 80%",
-  end: "center 58%",
-  onEnter: () => console.log("enter"),
-  onLeave: () => console.log("leave"),
-  onEnterBack: () => console.log("enterBack"),
-  onLeaveBack: () => console.log("leaveBack"),
-  onToggle: (self) => console.log("active", self.isActive),
-  // markers: { startColor: "white", endColor: "white" },
-});
+// // section 4 : Custom function
+// ScrollTrigger.create({
+//   trigger: ".panel--purple",
+//   containerAnimation: scrollTween,
+//   start: "center 80%",
+//   end: "center 58%",
+//   onEnter: () => console.log("enter"),
+//   onLeave: () => console.log("leave"),
+//   onEnterBack: () => console.log("enterBack"),
+//   onLeaveBack: () => console.log("leaveBack"),
+//   onToggle: (self) => console.log("active", self.isActive),
+//   // markers: { startColor: "white", endColor: "white" },
+// });
