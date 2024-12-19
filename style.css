@@ -219,7 +219,7 @@ h2 {
   align-items: center;
 
   min-height: 90vh;
-  background-color: gray;
+  background-color: #5c62d6;
 }
 
 .container {
@@ -239,6 +239,10 @@ h2 {
 
 .panel--red {
   background-color: red;
+}
+
+.panel--lightred {
+  background-color: #ff7757;
 }
 
 .panel--lightblue {
