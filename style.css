@@ -1,0 +1,344 @@
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-Bold.woff') format('woff2'), url('./fonts/Marianne-Bold.woff2') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-Regular.woff') format('woff2'), url('./fonts/Marianne-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-BoldItalic.woff') format('woff2'), url('./fonts/Marianne-BoldItalic.woff2') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-Italic.woff') format('woff2'), url('./fonts/Marianne-Italic.woff2') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-Light.woff') format('woff2'), url('./fonts/Marianne-Light.woff2') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-LightItalic.woff') format('woff2'), url('./fonts/Marianne-LightItalic.woff2') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-Medium.woff') format('woff2'), url('./fonts/Marianne-Medium.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-MediumItalic.woff') format('woff2'), url('./fonts/Marianne-MediumItalic.woff2') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-SemiBold.woff') format('woff2'), url('./fonts/Marianne-SemiBold.woff2') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-SemiBoldItalic.woff') format('woff2'), url('./fonts/Marianne-SemiBoldItalic.woff2') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-Thin.woff') format('woff2'), url('./fonts/Marianne-Thin.woff2') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-ThinItalic.woff') format('woff2'), url('./fonts/Marianne-ThinItalic.woff2') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-ExtraBold.woff') format('woff2'), url('./fonts/Marianne-ExtraBold.woff2') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-ExtraBoldItalic.woff') format('woff2'), url('./fonts/Marianne-ExtraBoldItalic.woff2') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-ExtraLight.woff') format('woff2'), url('./fonts/Marianne-ExtraLight.woff2') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('./fonts/Marianne-ExtraLightItalic.woff') format('woff2'), url('./fonts/Marianne-ExtraLightItalic.woff2') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Reset Css  - https://piccalil.li/blog/a-more-modern-css-reset/*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Base */
+
+body {
+  font-family: 'Marianne', sans-serif;
+  background-color: #222;
+}
+
+h2 {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.description,
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 90vh;
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+}
+
+.panel {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.panel--red {
+  background-color: red;
+}
+
+.panel--lightblue {
+  background-color: #ccedf2;
+}
+
+.panel--blue {
+  background-color: #80d2de;
+}
+
+.panel--purple {
+  background-color: purple;
+}
+
+.panel--green {
+  background-color: green;
+}
+
+.box {
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background-color: white;
+  border-radius: 8px;
+  color: #222;
+  font-weight: 700;
+  margin-left: 20px;
+  will-change: transform;
+}
+.box.active {
+  background-color: orange;
+  border: 2px solid white;
+}
+
+.lottie-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* --- */
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 110%;
+  height: 200px;
+  scale: 1.05;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  background: #111;
+  overflow: hidden;
+}
+
+.tv-screen h2 {
+  width: 100%;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Marianne", sans-serif;
+  color: #00ff00;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  animation: flicker 3s infinite alternate;
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes noise {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.tv-screen:hover h2 {
+  color: #ff0000;
+  text-shadow: 0px 0px 8px #ff0000;
+}
