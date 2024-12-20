@@ -452,15 +452,3 @@ h2 {
 .conclusionQuestion {
   color: white;
 }
-
-/* Évite le débordement horizontal */
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-/* S'assure que les éléments enfants respectent les limites */
-* {
-  box-sizing: border-box;
-  max-width: 100%;
-}
