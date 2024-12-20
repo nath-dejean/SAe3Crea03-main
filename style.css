@@ -323,6 +323,13 @@ h2 {
   margin: 0 auto;
 }
 
+.lottieSmallerIllustration-container {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
+}
+
 .lottieIllustration1 {
   left: -6rem;
   top: -6rem;
@@ -336,6 +343,46 @@ h2 {
   bottom: -4rem;
   padding: 4rem 7rem 7rem 4rem;
   background-color: #aeb1eb;
+  border-radius: 50%;
+}
+
+.lottieIllustration3 {
+  z-index: -2;
+  left: -7.5rem;
+  top: 0;
+  rotate: -20deg;
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: #80d2de;
+  border-radius: 50%;
+}
+
+.lottieIllustration4 {
+  z-index: -2;
+  left: -7.5rem;
+  top: 0;
+  rotate: -20deg;
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: #aeb1eb;
+  border-radius: 50%;
+}
+
+.lottieIllustration5 {
+  z-index: -2;
+  left: -7.5rem;
+  top: 0;
+  rotate: -20deg;
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: #80ded2;
+  border-radius: 50%;
+}
+
+.lottieIllustration6 {
+  z-index: -2;
+  left: -7.5rem;
+  top: 0;
+  rotate: -20deg;
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: #ccedf2;
   border-radius: 50%;
 }
 

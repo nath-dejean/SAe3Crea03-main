@@ -236,6 +236,41 @@ let lottieAnimation9 = lottie.loadAnimation({
   path: './AnimExports/ChartsIllustration2.json' // chemin
 });
 
+// Animation Lottie 10
+let lottieAnimation10 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation10'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './AnimExports/TVanimation.json' // chemin
+});
+
+// Animation Lottie 11
+let lottieAnimation11 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation11'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './AnimExports/PCanimation.json' // chemin
+});
+
+// Animation Lottie 12
+let lottieAnimation12 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation12'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './AnimExports/PHONEanimation.json' // chemin
+});
+
+// Animation Lottie 13
+let lottieAnimation13 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation13'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './AnimExports/TABLETanimation.json' // chemin
+});
 
 
 // // section 1 : Simple Animation
