@@ -55,7 +55,7 @@ glitchStyle.innerHTML = `
   .glitch {
     position: relative;
     color: #ff00ff;
-    text-shadow: 2px 2px 2px rgba(255, 0, 255, 0.5), -2px -2px 2px rgba(0, 255, 255, 0.5);
+    text-shadow: 2px 2px 2px rgba(255, 0, 255, 0.6), -2px -2px 2px rgba(0, 255, 255, 0.6);
   }
 `;
 document.head.appendChild(glitchStyle);
@@ -142,8 +142,8 @@ let lottieAnimation4 = lottie.loadAnimation({
 ScrollTrigger.create({
   trigger: document.getElementById('lottie-animation4'), // Deuxième section
   containerAnimation: scrollTween,
-  start: "center 80%",
-  end: "center 55%",
+  start: "left 74%",
+  end: "left 50%",
   scrub: true,
   // markers: { startColor: "blue", endColor: "red" }, // Pour tester
   onUpdate: (self) => {
@@ -189,7 +189,7 @@ ScrollTrigger.create({
   start: "center 50%",
   end: "center 50%",
   scrub: false,
-  // markers: { startColor: "green", endColor: "yellow" }, // Pour tester
+  markers: { startColor: "green", endColor: "yellow" }, // Pour tester
   onEnter: () => {
     lottieAnimation6.play();
   },
@@ -211,7 +211,7 @@ ScrollTrigger.create({
   start: "center 70%",
   end: "center 70%",
   scrub: false,
-  markers: { startColor: "green", endColor: "yellow" }, // Pour tester
+  // markers: { startColor: "green", endColor: "yellow" }, // Pour tester
   onEnter: () => {
     lottieAnimation7.play();
   },
@@ -270,6 +270,15 @@ let lottieAnimation13 = lottie.loadAnimation({
   loop: true,
   autoplay: true,
   path: './AnimExports/TABLETanimation.json' // chemin
+});
+
+// Animation Lottie 14
+let lottieAnimation14 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation14'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './AnimExports/SocialIconsAnimation.json' // chemin
 });
 
 
