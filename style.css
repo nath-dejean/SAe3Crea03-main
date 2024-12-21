@@ -218,11 +218,17 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  top: -1rem;
   left: -1rem;
   width: 100vw;
   min-height: 100vh;
   background-color: #5c62d6;
+}
+
+.final {
+  position: relative;
+  top: 0;
+  left: -1rem;
 }
 
 .container {
