@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'Marianne';
-  src: url('./fonts/Marianne-BoldItalic.woff') format('woff2'), url('./fonts/Marianne-BoldItalic.woff2') format('woff');
+  src: url('./fonts/Marianne-Bold_Italic.woff') format('woff2'), url('./fonts/Marianne-Bold_Italic.woff2') format('woff');
   font-weight: bold;
   font-style: italic;
 }
@@ -514,6 +514,25 @@ h2 {
   }
 }
 
-.conclusionQuestion {
+.conclusionTitle {
   color: white;
+}
+
+.conclusionQuote {
+  color: white;
+  font-style: italic;
+  margin: 2rem;
+}
+
+.conclusionText {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+}
+
+.logoRF {
+  position: absolute;
+  max-width: 10rem;
+  max-height: 10rem;
+  bottom: 1rem;
 }
