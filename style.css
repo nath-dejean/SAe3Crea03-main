@@ -218,7 +218,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: -1rem;
+  position: relative;
   left: -2rem;
   width: 100vw;
   min-height: 100vh;
