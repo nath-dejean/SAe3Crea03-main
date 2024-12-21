@@ -189,7 +189,7 @@ ScrollTrigger.create({
   start: "center 50%",
   end: "center 50%",
   scrub: false,
-  markers: { startColor: "green", endColor: "yellow" }, // Pour tester
+  // markers: { startColor: "green", endColor: "yellow" }, // Pour tester
   onEnter: () => {
     lottieAnimation6.play();
   },
